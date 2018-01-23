@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sisdistnameserver.MainController">
+<top><Text strokeType="OUTSIDE" strokeWidth="0.0" text="Servidor de nomes" BorderPane.alignment="CENTER">
+<font>
+<Font size="24.0" />
+</font>
+<BorderPane.margin>
+<Insets top="10.0" />
+</BorderPane.margin></Text>
+</top>
+<center><VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+<children><HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0">
+<children><Text strokeType="OUTSIDE" strokeWidth="0.0" text="Servidores Cadastrados">
+<HBox.margin>
+<Insets left="10.0" />
+</HBox.margin></Text>
+</children>
+<opaqueInsets>
+<Insets />
+</opaqueInsets></HBox><TableView fx:id="serversTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+  <columns>
+    <TableColumn editable="false" minWidth="-1.0" prefWidth="225.0" text="IP" />
+    <TableColumn editable="false" minWidth="-1.0" prefWidth="150.0" text="Porta" /><TableColumn editable="false" minWidth="-1.0" prefWidth="215.0" text="Nome" /><TableColumn editable="false" minWidth="-1.0" prefWidth="215.0" text="Clientes" />
+  </columns>
+<columnResizePolicy>
+<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+</columnResizePolicy>
+</TableView>
+</children></VBox>
+</center></BorderPane>
